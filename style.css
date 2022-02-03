@@ -1,0 +1,314 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(228, 225, 225);
+}
+a:hover{
+    color: rgb(184, 179, 179);
+}
+body{
+    background-color: #000;
+}
+h1{
+    color: rgb(223, 219, 219);
+}
+p{
+    color: rgb(145, 141, 141);
+}
+.grand-main{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.child-main{
+    width: 80vw;
+    height: auto;
+}
+
+/* main nav section  */
+
+.navbar{
+    margin: 2rem 0 5rem 0;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-list ul li{
+    padding: 10px;
+}
+
+.btn{
+    padding: 10px 25px;
+    border: none;
+    background-color: rgb(241, 241, 90);
+}
+.btn:hover{
+    background-color: rgb(240, 226, 29);
+    color: #fff;
+}
+.hamburger div{
+    background-color: rgb(221, 218, 218);
+    width: 2.5rem;
+    height: 2px;
+    margin: 5px;
+    display: none;
+}
+.brand{
+    display: flex;
+    justify-content: space-between;
+}
+.brand a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(238, 235, 235);
+}
+
+.nav-list.active{
+    display: flex;
+}
+/* main section end  */
+
+
+/* showcase section start  */
+.showcase{
+    margin: 2rem 0;
+}    
+.showcase h1{
+        color: rgb(228, 222, 222) ;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+/* showcase section end  */
+
+/* logo section start  */
+.logo div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo img{
+    padding: 10px;
+}
+
+/* card section  */
+.card{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+    align-items: center;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-child{
+    display: flex;
+}
+.card div:nth-child(1){
+    margin-right: 2rem;
+}
+.card div:nth-child(2){
+    margin-left: 2rem;
+}
+.card h1{
+    color: rgb(221, 221, 221);
+    margin: .75rem 0;
+    font-size: 2rem;
+}
+.card p{
+    color: rgb(136, 133, 133);
+}
+/* card section end  */
+
+/* detail section start  */
+.detail{
+    display: flex;
+    background-color: rgb(59, 59, 59);
+    width: 100%;
+    justify-content: center;
+}
+
+.child-detail{
+    margin: 4rem 0;
+    display: flex;
+}
+
+.detail h1{
+    font-size: 1.5rem;
+    padding-bottom: 0.85rem;
+}
+.detail p{
+    margin: .95rem 0;
+}
+.child-detail div:nth-child(1){
+    margin-right: 2rem;
+}
+.child-detail div:nth-child(2){
+    margin-left: 2rem;
+}
+
+/* join section  */
+.join{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 4rem;
+}
+.child-join{
+    margin: 2rem 0;
+    
+}
+.child-join div{
+    width: 50%;
+}
+.join p{
+    padding: .95rem 0;
+}
+
+/* join section end  */
+ /* footer section  */
+ .footer{
+     display: flex;
+     justify-content: center;
+     background-color: rgb(59, 59, 59);
+    align-items: center;
+ }
+ .footer .fab{
+     cursor: pointer;
+     color: #fff;
+     padding: 10px;
+ }
+ .child-footer{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 1rem 0;
+ }
+ .fab:hover{
+     color: rgb(206, 203, 203);
+ }
+
+/* media query  */
+@media screen and (max-width: 768px) {
+.child-main{
+    width: 90vw;
+}
+    /* main nav section  */
+    .brand{
+        width: 100%;
+    }
+    .navbar .btn{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .nav-list ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hamburger div{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .line2 {
+        opacity: 0;
+    }
+    .hamburger.active .line1 {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .line3 {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+/* main section end  */
+
+/* showcase start  */
+.showcase h1{
+    font-size: 2.5rem !important;
+    font-weight: 400;
+}
+.showcase div{
+    width: 100% ;
+}
+
+   }
+
+@media screen and (max-width: 992px) {
+    .showcase div{
+        width: 100%;
+    }
+
+    .showcase h1{
+        font-size: 3rem !important;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+    .card div:nth-child(1){
+        margin-right: 0rem;
+        margin-bottom: 4rem;
+    }
+    .card div:nth-child(2){
+        margin-left: 0;
+    }
+    .child-detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .child-detail div:nth-child(1){
+        margin-right: 0rem;
+    }
+    .child-detail div:nth-child(2){
+        margin-left: 0rem;
+    }
+    .child-join div{
+        width: 80%;
+    }
+   }
+@media screen and (min-width: 1024px){
+    .showcase h1{
+        font-size: 3rem;
+    }
+    .showcase div{
+        width: 70%;
+    }
+}
+@media screen and (min-width:1200px){
+    .showcase h1{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .showcase h1{
+        font-size: 2rem !important;
+    }
+    .child-join div{
+        width: 100%;
+    }
+    .fab{
+        font-size: 15px !important;
+    }
+  }
