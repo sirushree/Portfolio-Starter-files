@@ -169,7 +169,6 @@ p{
 .join{
     display: flex;
     justify-content: center;
-    width: 100%;
     margin: 4rem;
 }
 .child-join{
